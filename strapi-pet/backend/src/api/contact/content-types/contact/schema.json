@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contacts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "isFavourite": {
+      "type": "boolean"
+    },
+    "contactType": {
+      "type": "enumeration",
+      "enum": [
+        "friend",
+        "family",
+        "work",
+        "other"
+      ]
+    }
+  }
+}
